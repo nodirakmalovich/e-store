@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickHouse</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media.css">
+</head>
+
+<body>
+
+    <div class="background_blur"></div>
+
+    <div class="navbar">
+        <div class="container">
+            <div class="navbar_menu">
+                <div class="navbar_menu_logo">
+                    <a href="./index.html" class="navbar_menu_logo_link">
+                        <img src="./assets/logo.svg" alt="logo" class="navbar_menu_logo_link_image">
+                    </a>
+                </div>
+
+                <ul class="navbar_menu_menu">
+                    <li class="navbar_menu_menu_item">
+                        <a href="./html/catalog.html" class="navbar_menu_menu_item_link">
+                            Каталог
+                        </a>
+                    </li>
+                    <li class="navbar_menu_menu_item">
+                        <a href="./html/deleviery.html" class="navbar_menu_menu_item_link">
+                            Доставка
+                        </a>
+                    </li>
+                    <li class="navbar_menu_menu_item">
+                        <a href="#" class="navbar_menu_menu_item_link">
+                            Условия
+                        </a>
+                    </li>
+                    <li class="navbar_menu_menu_item">
+                        <a href="#" class="navbar_menu_menu_item_link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="navbar_menu_contact">
+                    <li class="navbar_menu_contact_item">
+                        <a href="#" class="navbar_menu_contact_item_number">
+                            + 375 736 463 64 72
+                        </a>
+                    </li>
+                    <li class="navbar_menu_contact_item navbar_menu_contact_item_last">
+                        /
+                    </li>
+                    <li class="navbar_menu_contact_item navbar_menu_contact_item_last">
+                        <a href="#" class="navbar_menu_contact_item_number last">
+                            + 375 736 463 64 72
+                            <span class="navbar_menu_contact_item_number_span">
+                                Заказать звонок
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="mobile_navber">
+
+        <button class="navbar_bottom_toggle"></button>
+        <a href="./index.html" class="navbar_menu_logo_link">
+            <img src="./assets/logo.svg" alt="logo" class="navbar_menu_logo_link_image">
+        </a>
+        <button class="mobile_navber_search"></button>
+    </div> -->
+
+    <!-- <div class="mobile_navbar_search">
+        <button class="close_menu mobile_navbar_search_close"></button>
+        <input type="text" placeholder="Что желаете найти?" class="navbar_bottom_input">
+
+        <div class="search_menu mob_search"></div>
+    </div> -->
+
+    <div class="container hero_container">
+        <div class="navbar_bottom">
+            <button class="navbar_bottom_toggle"></button>
+            <input type="text" placeholder="Что желаете найти?" class="navbar_bottom_input">
+
+            <button class="navbar_bottom_link">Добавить новый продукт</button>
+
+            <div class="navbar_bottom_actions">
+                <button class="navbar_bottom_actions_btn star"></button>
+                <button class="navbar_bottom_actions_btn basket"></button>
+                <button class="navbar_bottom_actions_btn account"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product_add">
+        <div class="container">
+            <div class="product_add_wrapper">
+                <h1 class="product_add_title">Добавить новый продукт</h1>
+                <input type="text" placeholder="Наименование товара" class="product_add_input new_name">
+                <input type="text" placeholder="Описание товара" class="product_add_input new_desc">
+                <input type="number" placeholder="Цена товара" class="product_add_input new_price">
+                <input type="url" placeholder="URL изображения" class="product_add_input new_imageUrl">
+                <input type="number" placeholder="Количество товара" class="product_add_input new_amoun">
+
+
+
+                <button class="product_add_btn">Добавить продукт</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="search_menu "></div>
+
+    <div class="login_wrapper">
+
+        <div id="login">
+            <h1 class="buy_menu_title">
+                Вход
+            </h1>
+            <form>
+                <input type="text"  placeholder="Email / Телефон" class="buy_menu_input login_input">
+                <input type="password"  placeholder="********" class="buy_menu_input login_input">
+
+                <button class="hero_row_col_card_mainBtn entr_acc">
+                    Войти
+                </button>
+            </form>
+
+            <div class="register_wrapper">
+                <a href="#" id="register_acc" class="register_wrapper_link">
+                    Регистрация
+                </a>
+                <a href="#" id="recover_btn" class="register_wrapper_link ">
+                    Восстановление пароля
+                </a>
+            </div>
+
+            <h3 class="login_with_google">
+                Войти с помощью социальной сети
+            </h3>
+
+            <div class="login_with">
+                <button class="login_with_acc vk"></button>
+                <button class="login_with_acc fb"></button>
+                <button class="login_with_acc gg"></button>
+            </div>
+        </div>
+
+        <div id="recovery">
+            <h1 class="buy_menu_title">
+                Восстановление пароля
+            </h1>
+
+            <form>
+                <input type="email"  placeholder="Email" class="buy_menu_input login_input">
+
+                <button class="hero_row_col_card_mainBtn entr_acc">
+                    Войти
+                </button>
+
+                <div class="register_wrapper">
+                    <a href="#" id="register_entr_acc_sec" class="register_wrapper_link ">Вход </a>
+                    <a href="#" id="register_acc_sec" class="register_wrapper_link">
+                        Регистрация
+                    </a>
+                </div>
+
+
+                <h3 class="login_with_google">
+                    Войти с помощью социальной сети
+                </h3>
+
+                <div class="login_with">
+                    <button class="login_with_acc vk"></button>
+                    <button class="login_with_acc fb"></button>
+                    <button class="login_with_acc gg"></button>
+                </div>
+            </form>
+        </div>
+
+        <div id="register_container">
+            <h1 class="buy_menu_title">
+                Регистрация
+            </h1>
+            <form>
+                <input type="text"  placeholder="Телефон" class="buy_menu_input login_input">
+                <input type="text"  placeholder="Email" class="buy_menu_input login_input">
+                <input type="password"  placeholder="Пароль" class="buy_menu_input login_input">
+                <input type="password"  placeholder="Повторите пароль" class="buy_menu_input login_input">
+
+                <button class="hero_row_col_card_mainBtn entr_acc">
+                    Войти
+                </button>
+            </form>
+
+            <div class="register_wrapper">
+                <a href="#" id="register_entr_acc" class="register_wrapper_link ">Вход </a>
+                <a href="#" id="recover_btn_sec" class="register_wrapper_link ">
+                    Восстановление пароля
+                </a>
+            </div>
+
+            <h3 class="login_with_google">
+                Войти с помощью социальной сети
+            </h3>
+
+            <div class="login_with">
+                <button class="login_with_acc vk"></button>
+                <button class="login_with_acc fb"></button>
+                <button class="login_with_acc gg"></button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="buy_menu">
+
+        <div class="finished_buy">
+            <h1 class="finished_buy_title">
+                Заказ успешно оформлен
+            </h1>
+
+            <p class="finished_buy_text">
+                С вами свяжется менеджер для подтверждения информации
+            </p>
+
+            <img src="./assets/finishedBuy.svg" alt="" class="finished_buy_image">
+
+
+            <button type="submit" class="buy_btn ">
+                close
+            </button>
+        </div>
+
+        <div class="buy_menu_wrapper">
+
+            <h1 class="buy_menu_title">
+                Оформление заказа
+            </h1>
+
+            <h3 class="buy_menu_contact">
+                Контактная информация
+            </h3>
+
+            <input type="number" required placeholder="Телефон*" class="buy_menu_input">
+            <input type="email" placeholder="Email*" class="buy_menu_input">
+            <input type="text" required placeholder="Имя" class="buy_menu_input">
+
+
+            <h3 class="buy_menu_contact">
+                Адрес
+            </h3>
+
+            <input type="text" placeholder="Город*" class="buy_menu_input">
+            <input type="text" placeholder="Улица*" class="buy_menu_input">
+
+            <div class="buy_menu_location">
+                <div class="buy_menu_location_col">
+                    <label for="home">Дом</label>
+                    <input class="buy_menu_location_col_input" type="text" id="home" placeholder="Дом">
+
+                </div>
+                <div class="buy_menu_location_col">
+                    <label for="Подъезд">Подъезд</label>
+                    <input class="buy_menu_location_col_input" type="text" id="Подъезд" placeholder="Подъезд">
+
+                </div>
+                <div class="buy_menu_location_col">
+                    <label for="Квартира">Квартира</label>
+                    <input class="buy_menu_location_col_input" type="text" id="Квартира" placeholder="Квартира">
+
+                </div>
+            </div>
+
+            <p class="buy_menu_contact price_menu top_price">
+                Курьерские услуги:
+                <span class="buy_menu_contact price_menu">
+                    324 Br
+                </span>
+            </p>
+
+
+            <p class="buy_menu_contact price_menu">
+                Сумма заказа:
+                <span class="buy_menu_contact price_menu price_product">
+                    324 Br
+                </span>
+            </p>
+
+            <h1 class="buy_menu_title price_menu">
+                Итого:
+                <span class="buy_menu_contact price_menu price_product_all">
+                    324 Br
+                </span>
+            </h1>
+
+            <button type="submit" class="buyBtn">
+                Buy
+            </button>
+        </div>
+
+    </div>
+
+    <div class="menu_toggler">
+        <div class="menu_toggler_top">
+            <a href="./index.html">
+                <img src="./assets/logo.svg" alt="logo" class="menu_toggler_top_logo">
+            </a>
+            <button class="close_menu"></button>
+        </div>
+        <div class="menu_toggler_wrapper">
+            <ul class="menu_toggler_menu">
+                <li class="menu_toggler_menu_item">
+                    <a href="./html/catalog.html" class="menu_toggler_menu_item_link">
+                        <b>
+                            Каталог
+                        </b>
+                    </a>
+                </li>
+                <li class="menu_toggler_menu_item">
+                    <a href="#" class="menu_toggler_menu_item_link">
+                        <b>
+                            Товары в наличии
+                        </b>
+                    </a>
+                </li>
+                <li class="menu_toggler_menu_item">
+                    <a href="#" class="menu_toggler_menu_item_link">
+                        <b>
+                            Скидки
+                        </b>
+                    </a>
+                </li>
+                <li class="menu_toggler_menu_item">
+                    <a href="#" class="menu_toggler_menu_item_link">
+                        <b>
+                            Популярное
+                        </b>
+                    </a>
+                </li>
+                <li class="menu_toggler_menu_item">
+                    <a href="#" class="menu_toggler_menu_item_link">
+                        <b>
+                            Вдохновение
+                        </b>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="container product_container">
+        <div class="hero">
+            <div class="hero_row">
+                <div class="hero_row_col col-4">
+                    <div class="hero_row_col_card">
+                        <h1 class="hero_row_col_card_title">
+                            Мебель на любой вкус!
+                        </h1>
+                        <ul class="hero_row_col_card_menu">
+                            <li class="hero_row_col_card_menu_item">
+                                Худи, чашки для горячего чая и термосы
+                            </li>
+                            <li class="hero_row_col_card_menu_item">
+                                Eлочные игрушки, брелочки
+                            </li>
+                            <li class="hero_row_col_card_menu_item">
+                                Начало списка вещей, которые можно
+                            </li>
+                        </ul>
+
+                        <button class="hero_row_col_card_mainBtn">
+                            Перейти в каталог
+                        </button>
+                        <button class="hero_row_col_card_secondBtn">
+                            Внести список артикулов
+                        </button>
+
+                        <div class="mobile_hero_row_col_card_Btn">
+                            <button class="mobile_hero_row_col_card_mainBtn">
+                                Перейти в каталог
+                            </button>
+                            <button class="mobile_hero_row_col_card_secondBtn">
+                                Внести список артикулов
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero_row_col col-8"></div>
+            </div>
+        </div>
+
+        <div class="popular">
+            <a href="#">
+                <div class="popular">
+                    <h2 class="popular_title">
+                        Популярные категории
+                        <span class="popular_title_span">Все категории <img src="./assets/Arrow.svg" alt="Arrow"></span>
+                    </h2>
+                </div>
+            </a>
+
+            <div class="popular_row">
+                <div class="popular_row_card">
+                    <img src="./assets/popularItem.svg" alt="popularItem" class="popular_row_card_image">
+                    <a href="#" class="popular_row_card_title">
+                        Диваны
+                    </a>
+                </div>
+                <div class="popular_row_card">
+                    <img src="./assets/kisspng.svg" alt="popularItem" class="popular_row_card_image">
+                    <a href="#" class="popular_row_card_title">
+                        Спальная
+                    </a>
+                </div>
+                <div class="popular_row_card">
+                    <img src="./assets/frying.svg" alt="popularItem" class="popular_row_card_image">
+                    <a href="#" class="popular_row_card_title">
+                        Кухня
+                    </a>
+                </div>
+                <div class="popular_row_card">
+                    <img src="./assets/garden.svg" alt="popularItem" class="popular_row_card_image">
+                    <a href="#" class="popular_row_card_title">
+                        Для сада
+                    </a>
+                </div>
+                <div class="popular_row_card">
+                    <img src="./assets/mebel.svg" alt="popularItem" class="popular_row_card_image">
+                    <a href="#" class="popular_row_card_title">
+                        Мебель
+                    </a>
+                </div>
+                <div class="popular_row_card">
+                    <img src="./assets/antibacterial.svg" alt="popularItem" class="popular_row_card_image">
+                    <a href="#" class="popular_row_card_title">
+                        Гигиена
+                    </a>
+                </div>
+                <div class="popular_row_card">
+                    <img src="./assets/otdx.svg" alt="popularItem" class="popular_row_card_image">
+                    <a href="#" class="popular_row_card_title">
+                        Товары для отдыха
+                    </a>
+                </div>
+                <div class="popular_row_card">
+                    <img src="./assets/zerkla.svg" alt="popularItem" class="popular_row_card_image">
+                    <a href="#" class="popular_row_card_title">
+                        Зеркала
+                    </a>
+                </div>
+                <div class="popular_row_card besaide">
+                    <img src="./assets/bedside.svg" alt="popularItem" class="popular_row_card_image">
+                    <a href="#" class="popular_row_card_title beside_span">
+                        Хранение и порядок
+                    </a>
+                </div>
+                <div class="popular_row_card">
+                    <img src="./assets/cooking.svg" alt="popularItem" class="popular_row_card_image">
+                    <a href="#" class="popular_row_card_title">
+                        Кухня и бытовая тех..
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="discount">
+            <a href="#">
+                <div class="popular">
+                    <h2 class="popular_title">
+                        Скидки %
+                        <span class="popular_title_span">Все товары в категории <img src="./assets/Arrow.svg"
+                                alt="Arrow"></span>
+                    </h2>
+                </div>
+            </a>
+
+            <div class="discount_row">
+
+            </div>
+
+        </div>
+
+        <div class="products">
+            <a href="#">
+                <div class="popular">
+                    <h2 class="popular_title">
+                        Товары в наличии
+                        <span class="popular_title_span">Все товары в категории <img src="./assets/Arrow.svg"
+                                alt="Arrow"></span>
+                    </h2>
+                </div>
+            </a>
+
+            <div class="discount_row product_row">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="basket_product">
+        <div class="container basket_container">
+            <div class="basket_product_row"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <a href="#" class="footer_logo">
+                <img src="./assets/logo.svg" alt="logo" class="navbar_logo_image">
+            </a>
+
+            <div class="footer_row">
+                <ul class="footer_row_menu">
+                    <li class="footer_row_menu_item ">
+                        <h2 class="footer_row_menu_item_link footer_main_menu">
+                            Информация
+                        </h2>
+                    </li>
+                    <li class="footer_row_menu_item">
+                        <a href="#" class="footer_row_menu_item_link">
+                            Все права защищены © 2015 интернет-магазин AIKEA.BY Беларусь.
+
+                        </a>
+                    </li>
+                    <li class="footer_row_menu_item">
+                        <a href="#" class="footer_row_menu_item_link">
+                            УНП 191828159 ИП Парейко В.С., регистрационный номер в торговом реестре 158299
+
+                        </a>
+                    </li>
+                    <li class="footer_row_menu_item">
+                        <a href="#" class="footer_row_menu_item_link">
+                            Политика конфиденциальности
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="footer_row_menu">
+                    <li class="footer_row_menu_item ">
+                        <h2 class="footer_row_menu_item_link footer_main_menu">
+                            Меню
+                        </h2>
+                    </li>
+                    <li class="footer_row_menu_item">
+                        <a href="#" class="footer_row_menu_item_link">
+                            Главная | Каталог | Товары в наличии
+
+                        </a>
+                    </li>
+                    <li class="footer_row_menu_item">
+                        <a href="#" class="footer_row_menu_item_link">
+                            Скидки | Популярное | Вдохновение
+                        </a>
+                    </li>
+                    <li class="footer_row_menu_item">
+                        <a href="#" class="footer_row_menu_item_link">
+                            Доставка | Услуги | Условия
+                        </a>
+                    </li>
+                    <li class="footer_row_menu_item">
+                        <a href="#" class="footer_row_menu_item_link">
+                            Контакты | Вставить | Cписок покупок
+                        </a>
+                    </li>
+                    <li class="footer_row_menu_item">
+                        <a href="#" class="footer_row_menu_item_link">
+                            Корзина | Личный кабинет | Избранное
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="footer_row_menu">
+                    <li class="footer_row_menu_item ">
+                        <h2 class="footer_row_menu_item_link footer_main_menu">
+                            Контакты
+                        </h2>
+                    </li>
+                    <li class="footer_row_menu_item">
+                        <a href="#" class="footer_row_menu_item_link">
+                            г.Минск
+
+                        </a>
+                    </li>
+                    <li class="footer_row_menu_item">
+                        <a href="#" class="footer_row_menu_item_link">
+                            Ул. Первомайская, Д. 1, Кв. 43
+                        </a>
+                    </li>
+                    <li class="footer_row_menu_item">
+                        <a href="#" class="footer_row_menu_item_link">
+                            + 375 434 847 28 84
+                        </a>
+                    </li>
+                    <li class="footer_row_menu_item">
+                        <a href="#" class="footer_row_menu_item_link">
+                            + 375 448 473 09 48
+                        </a>
+                    </li>
+                    <li class="footer_row_menu_item">
+                        <a href="#" class="footer_row_menu_item_link">
+                            ikeaekspress@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <template class="searchTemplate">
+        <div class="search_menu_card">
+            <div class="search_menu_card_main">
+                <img src="./assets/garden.svg" alt="" class="search_menu_card_image">
+                <div class="search_menu_card_info">
+                    <h3 class="search_menu_card_info_title">
+                        VINTER 2020 ВИНТЕР 2020
+                    </h3>
+                    <div class="search_menu_card_info_search">
+                        <p class="search_menu_card_info_text">id:1 / </p>
+                        <p class="search_menu_card_info_text_span">В наличии</p>
+                    </div>
+                    <p class="search_menu_card_info_desc">
+                        Вешалка напольная платяной 3-дверный 117x190 см
+                    </p>
+                    <p class="search_menu_card_info_price">
+                        8 900
+                    </p>
+                </div>
+                <button class="basketPlusBtn">
+                    <img src="./assets/basketPlus.svg" alt="">
+                </button>
+            </div>
+            <div class="search_menu_card_line"></div>
+        </div>
+    </template>
+
+    <template id="discountProducts">
+        <div class="discount_row_card col-3">
+            <img src="./assets/discount.svg" alt="discount" class="discount_row_card_image">
+            <p class="discount_row_card_discount">12%</p>
+            <h3 class="discount_row_card_title">
+                VINTER 2020 Шкаф платяной 3-дверный 117x190 см
+            </h3>
+            <p class="discount_row_card_description">
+                Шкаф платяной 3-дверный 117x190 см
+            </p>
+            <p class="discount_row_card_price">
+                67 763,23 Br
+            </p>
+            <p class="discount_row_card_price_new">
+                62 392,23 Br
+            </p>
+            <div class="discount_row_card_count">
+                <button class="minus">-</button>
+                <p class="count">0</p>
+                <button class="plus">+</button>
+            </div>
+            <button class="basketPlus">
+                <img src="./assets/basketPlus.svg" alt="">
+            </button>
+        </div>
+    </template>
+
+    <template id="productTemplate">
+        <div class="discount_row_card col-3 product_card">
+            <img src="./assets/sofa.svg" alt="discount" class="discount_row_card_image">
+            <h3 class="discount_row_card_title">
+                BRIMNES БРИМНЭС Шкаф платяной 3-дверный 117x190 см
+            </h3>
+            <p class="discount_row_card_description">
+                Шкаф платяной 3-дверный 117x190 см
+            </p>
+            <p class="discount_row_card_price_new">
+                52 392 Br
+            </p>
+            <div class="discount_row_card_count">
+                <button class="minus">-</button>
+                <p class="count">0</p>
+                <button class="plus">+</button>
+            </div>
+            <button class="basketPlus">
+                <img src="./assets/basketPlus.svg" alt="">
+            </button>
+        </div>
+    </template>
+
+    <template id="basketTemplate">
+        <div class="discount_row_card col-3 product_card">
+            <img src="./assets/sofa.svg" alt="discount" class="discount_row_card_image">
+            <h3 class="discount_row_card_title">
+                BRIMNES БРИМНЭС Шкаф платяной 3-дверный 117x190 см
+            </h3>
+            <p class="discount_row_card_description">
+                Шкаф платяной 3-дверный 117x190 см
+            </p>
+            <p class="discount_row_card_price_new">
+                52 392 Br
+            </p>
+            <div class="discount_row_card_count">
+                <button class="minus">-</button>
+                <p class="count">0</p>
+                <button class="plus">+</button>
+            </div>
+            <button class="basketPlus delete">
+                <img src="./assets/delete.svg" alt="">
+            </button>
+        </div>
+    </template>
+
+    <script src="./java/products.js"></script>
+    <script src="./java/main.js"></script>
+</body>
+
+</html>
